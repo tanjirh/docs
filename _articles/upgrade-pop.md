@@ -4,9 +4,9 @@ title: Upgrade Pop!_OS
 description: >
   Get the newest version of Pop!_OS on your System76 computer! Check out our upgrade directions.
 keywords:
-  - Pop!_OS 17.10
   - Pop!_OS 18.04
   - Pop!_OS 18.10
+  - Pop!_OS 19.04
   - LTS
   - Non-LTS
   - Upgrade

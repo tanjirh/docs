@@ -16,6 +16,8 @@ section: software-applications
 
 These instructions are for System76 owners who have been prompted for a firmware update. Firmware updates may be issued to fix security vulnerabilities or to improve hardware functionality.
 
+![GNOME Settings Firmware Manager](/images/system-firmware/gnome-settings-firmware-manager.png)
+
 ### Before You Begin
 
 * Make sure the laptop is **plugged into power** for the entire firmware updating process.

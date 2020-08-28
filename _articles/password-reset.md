@@ -22,22 +22,22 @@ section: security-encryption
 
 # Change Your User or Encryption Password
 
-## [Table of Contents](contents)
+## [Table of Contents](#contents)
 
 - [Change User Login Password](#change-user-login-password)
-- [Pop!\_OS 18.04 and Later](#Pop%21\_OS-18.04-and-later)
+- [Pop!\_OS 18.04 and Later](#Pop-OS)
 - [GRUB](#grub)
 - [Root Prompt](#root-prompt)
 - [Change the Encryption Passphrase Using the Terminal](#change-the-encryption-passphrase-using-the-terminal)
 - [Change the encryption passphrase using Disks](#change-the-encryption-passphrase-using-disks)
 
-## Change User Login Password
+## [Change User Login Password](#change-user-login-password)
 
 If you can't log into your computer, you can follow these instructions to reset the password for any user. Pop!_OS and Ubuntu allow for the root user to reset the password for any user account. In order to get to the root user, we need to restart the computer and use what's called "single user mode", which is the low level repair system for the computer.
 
 [Return to Table of Contents](#contents)
 
-### Pop!_OS 18.04 and Later
+### [Pop!_OS 18.04 and Later](#Pop-OS)
 
 On a fresh install Pop!_OS 18.04 and later, <u>systemd-boot</u> is used rather than <u>GRUB</u>.  Please follow these instructions to reset your password.  If your operating system is anything other than Pop!_OS 18.04 and later, please use the [GRUB](#grub) section.
 
@@ -101,7 +101,7 @@ Now, enter the original passphrase. Here you will be prompted for the new passph
 
 [Return to Table of Contents](#contents)
 
-### GRUB
+### [GRUB](#grub)
 
 There are two ways to enter into the GRUB boot menu. The first is to restart your computer and tap <kbd>ESC</kbd> while the computer starts. The second is to power it off while it is starting up, which will make the menu show up on the next boot. Make sure to stop tapping <kbd>ESC</kbd> when the menu appears:
 
@@ -123,7 +123,7 @@ At the recovery menu, choose the **root** option, then press <kbd>Enter</kbd> to
 
 [Return to Table of Contents](#contents)
 
-### Root Prompt
+### [Root Prompt](#root-prompt)
 
 **A note on the root prompt:** Since the system is operating with only a single console, all output is printed to the screen. This can be really confusing, but nothing has changed -- it's just output. **If your screen looks like the image below, with a timeout notice or similar,** press Ctrl+C to return to the prompt and continue working. You will need to re-enter the command you were typing.
 
@@ -165,7 +165,7 @@ reboot
 
 [Return to Table of Contents](#contents)
 
-### Change the encryption passphrase using the Terminal:
+### [Change the encryption passphrase using the Terminal:](#change-the-encryption-passphrase-using-the-terminal)
 
 This can be done in the operating system or in the recovery mode/partition.
 
@@ -183,7 +183,7 @@ sudo cryptsetup luksChangeKey /dev/sda3 -S 0
 
 [Return to Table of Contents](#contents)
 
-### Change the encryption passphrase using Disks:
+### [Change the encryption passphrase using Disks:](#change-the-encryption-passphrase-using-disks)
 
 Click on the drive that has the OS installed on it on the left side of the <u>Disks</u> application. Then click on the LUKS partition (where the root partition is) and then click on the gear icon under the 'Volumes' section.
 

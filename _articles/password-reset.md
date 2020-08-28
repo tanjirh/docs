@@ -14,12 +14,28 @@ hidden: false
 section: security-encryption
 
 ---
+- Document Version: 2.0.0
+- Date: (8-28-2020)
+- Author: Aaron Honeycutt
+- Contributing Editor(s): Nathaniel Warburton
+
 
 # Change Your User or Encryption Password
+
+## [Table of Contents](#contents)
+
+- [Change User Login Password](/articles/password-reset/#change-user-login-password)
+- [Pop!\_OS 18.04 and Later](/articles/password-reset/#Pop%21_OS-18.04-and-later)
+- [GRUB](/articles/password-reset/#grub)
+- [Root Prompt](/articles/password-reset/#root-prompt)
+- [Change the Encryption Passphrase Using the Terminal](/articles/password-reset/#change-the-encryption-passphrase-using-the-terminal)
+- [Change the encryption passphrase using Disks](/articles/password-reset/#change-the-encryption-passphrase-using-disks)
 
 ## Change User Login Password
 
 If you can't log into your computer, you can follow these instructions to reset the password for any user. Pop!_OS and Ubuntu allow for the root user to reset the password for any user account. In order to get to the root user, we need to restart the computer and use what's called "single user mode", which is the low level repair system for the computer.
+
+[Return to Table of Contents](#contents)
 
 ### Pop!_OS 18.04 and Later
 
@@ -29,7 +45,11 @@ First, bring up the <u>systemd-boot</u> menu by holding down <kbd>SPACE</kbd> or
 
 ![systemd-boot](/images/password/systemd-boot.png)
 
-Once the recovery operating system has opened, click **Install Pop!_OS** in the top left, and choose **quit**.  Then, press <kbd><span class="fl-pop-key"></span></kbd>+<kbd>T</kbd>/<kbd><i class="fl-ubuntu"></i></kbd> to open a terminal, and type in these commands:
+Once the recovery operating system has opened, click **Install Pop!_OS** in the top left, and choose **quit**. Alternatively, you can choose **Try Demo Mode** in the lower left corner of the installer window.
+
+![Installer Window](/images/pop-recovery/recovery-install-page-20.04.png)
+
+Then, press <kbd><span class="fl-pop-key"></span></kbd>+<kbd>T</kbd>/<kbd><i class="fl-ubuntu"></i></kbd> to open a terminal, and type in these commands:
 
 ```
 lsblk
@@ -79,6 +99,8 @@ reboot
 
 Now, enter the original passphrase. Here you will be prompted for the new passphrase, and then to confirm the new passphrase.
 
+[Return to Table of Contents](#contents)
+
 ### GRUB
 
 There are two ways to enter into the GRUB boot menu. The first is to restart your computer and tap <kbd>ESC</kbd> while the computer starts. The second is to power it off while it is starting up, which will make the menu show up on the next boot. Make sure to stop tapping <kbd>ESC</kbd> when the menu appears:
@@ -98,6 +120,8 @@ Once in the GRUB menu, choose the second option **Advanced options for Ubuntu**,
 At the recovery menu, choose the **root** option, then press <kbd>Enter</kbd> to drop to a root prompt.
 
 ![Recovery](/images/password/recovery.png)
+
+[Return to Table of Contents](#contents)
 
 ### Root Prompt
 
@@ -131,13 +155,15 @@ Enter a new password, then press <kbd>Enter</kbd>. Even though you are typing, n
 
 Enter the same password again to confirm, then press <kbd>Enter</kbd>.
 
-If successful, you will see a message confirming `passwd: password updated successfully
+If successful, you will see a message confirming `passwd: password updated successfully`
 
 You can now reboot:
 
 ```
 reboot
 ```
+
+[Return to Table of Contents](#contents)
 
 ### Change the encryption passphrase using the Terminal:
 
@@ -155,8 +181,13 @@ Then to change the passphrase:
 sudo cryptsetup luksChangeKey /dev/sda3 -S 0
 ```
 
+[Return to Table of Contents](#contents)
+
 ### Change the encryption passphrase using Disks:
 
 Click on the drive that has the OS installed on it on the left side of the <u>Disks</u> application. Then click on the LUKS partition (where the root partition is) and then click on the gear icon under the 'Volumes' section.
 
 ![GNOME Disks](/images/password/disks-change-passphrase.png)
+
+
+[Return to Table of Contents](#contents)

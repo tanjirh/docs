@@ -24,12 +24,12 @@ section: security-encryption
 
 ## [Table of Contents](#contents)
 
-- [Change User Login Password](/articles/password-reset/#change-user-login-password)
-- [Pop!\_OS 18.04 and Later](/articles/password-reset/#Pop%21_OS-18.04-and-later)
-- [GRUB](/articles/password-reset/#grub)
-- [Root Prompt](/articles/password-reset/#root-prompt)
-- [Change the Encryption Passphrase Using the Terminal](/articles/password-reset/#change-the-encryption-passphrase-using-the-terminal)
-- [Change the encryption passphrase using Disks](/articles/password-reset/#change-the-encryption-passphrase-using-disks)
+- [Change User Login Password](#change-user-login-password)
+- [Pop!\_OS 18.04 and Later](#Pop%21_OS-18.04-and-later)
+- [GRUB](#grub)
+- [Root Prompt](#root-prompt)
+- [Change the Encryption Passphrase Using the Terminal](#change-the-encryption-passphrase-using-the-terminal)
+- [Change the encryption passphrase using Disks](#change-the-encryption-passphrase-using-disks)
 
 ## Change User Login Password
 

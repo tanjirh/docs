@@ -22,10 +22,10 @@ section: security-encryption
 
 # Change Your User or Encryption Password
 
-## [Table of Contents](#contents)
+## [Table of Contents](contents)
 
 - [Change User Login Password](#change-user-login-password)
-- [Pop!\_OS 18.04 and Later](#Pop%21_OS-18.04-and-later)
+- [Pop!\_OS 18.04 and Later](#Pop%21\_OS-18.04-and-later)
 - [GRUB](#grub)
 - [Root Prompt](#root-prompt)
 - [Change the Encryption Passphrase Using the Terminal](#change-the-encryption-passphrase-using-the-terminal)

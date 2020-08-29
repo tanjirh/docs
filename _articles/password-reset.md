@@ -25,9 +25,9 @@ section: security-encryption
 #### [Table of Contents](#Contents)
 
 - [Change User Login Password](#change-user-login-password)
-- [Pop!\_OS 18.04 and Later](#Pop-OS)
-- [GRUB](#grub)
-- [Root Prompt](#root-prompt)
+  - [Pop!\_OS 18.04 and Later](#Pop-OS)
+  - [GRUB](#grub)
+  - [Root Prompt](#root-prompt)
 - [Change the Encryption Passphrase Using the Terminal](#change-the-encryption-passphrase-using-the-terminal)
 - [Change the encryption passphrase using Disks](#change-the-encryption-passphrase-using-disks)
 

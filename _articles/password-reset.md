@@ -14,13 +14,13 @@ hidden: false
 section: security-encryption
 
 ---
+
+# **Change Your User or Encryption Password**
 - Document Version: 2.0.0
 - Date: (8-28-2020)
 - Author: Aaron Honeycutt
 - Contributing Editor(s): Nathaniel Warburton
 
-
-# Change Your User or Encryption Password
 
 #### [Table of Contents](#Contents)
 

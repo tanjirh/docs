@@ -22,7 +22,7 @@ section: security-encryption
 
 # Change Your User or Encryption Password
 
-## [Table of Contents](#contents)
+## [Table of Contents](#Contents)
 
 - [Change User Login Password](#change-user-login-password)
 - [Pop!\_OS 18.04 and Later](#Pop-OS)
@@ -35,9 +35,9 @@ section: security-encryption
 
 If you can't log into your computer, you can follow these instructions to reset the password for any user. Pop!_OS and Ubuntu allow for the root user to reset the password for any user account. In order to get to the root user, we need to restart the computer and use what's called "single user mode", which is the low level repair system for the computer.
 
-[Return to Table of Contents](#contents)
+[Return to Table of Contents](#Contents)
 
-### [Pop!_OS 18.04 and Later](#Pop-OS)
+### [Pop!\_OS 18.04 and Later](#Pop-OS)
 
 On a fresh install Pop!_OS 18.04 and later, <u>systemd-boot</u> is used rather than <u>GRUB</u>.  Please follow these instructions to reset your password.  If your operating system is anything other than Pop!_OS 18.04 and later, please use the [GRUB](#grub) section.
 
@@ -99,7 +99,7 @@ reboot
 
 Now, enter the original passphrase. Here you will be prompted for the new passphrase, and then to confirm the new passphrase.
 
-[Return to Table of Contents](#contents)
+[Return to Table of Contents](#Contents)
 
 ### [GRUB](#grub)
 
@@ -121,7 +121,7 @@ At the recovery menu, choose the **root** option, then press <kbd>Enter</kbd> to
 
 ![Recovery](/images/password/recovery.png)
 
-[Return to Table of Contents](#contents)
+[Return to Table of Contents](#Contents)
 
 ### [Root Prompt](#root-prompt)
 
@@ -163,7 +163,7 @@ You can now reboot:
 reboot
 ```
 
-[Return to Table of Contents](#contents)
+[Return to Table of Contents](#Contents)
 
 ### [Change the encryption passphrase using the Terminal:](#change-the-encryption-passphrase-using-the-terminal)
 
@@ -181,7 +181,7 @@ Then to change the passphrase:
 sudo cryptsetup luksChangeKey /dev/sda3 -S 0
 ```
 
-[Return to Table of Contents](#contents)
+[Return to Table of Contents](#Contents)
 
 ### [Change the encryption passphrase using Disks:](#change-the-encryption-passphrase-using-disks)
 
@@ -190,4 +190,4 @@ Click on the drive that has the OS installed on it on the left side of the <u>Di
 ![GNOME Disks](/images/password/disks-change-passphrase.png)
 
 
-[Return to Table of Contents](#contents)
+[Return to Table of Contents](#Contents)

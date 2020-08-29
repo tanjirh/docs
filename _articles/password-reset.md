@@ -22,7 +22,7 @@ section: security-encryption
 
 # Change Your User or Encryption Password
 
-## [Table of Contents](#Contents)
+#### [Table of Contents](#Contents)
 
 - [Change User Login Password](#change-user-login-password)
 - [Pop!\_OS 18.04 and Later](#Pop-OS)
